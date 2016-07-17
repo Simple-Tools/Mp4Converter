@@ -7,6 +7,7 @@
 > ffmpeg -i input.mp4 output.mp3
 
 ### combine two mp3 files to one
+
 > ffmpeg -i d.mp3 -i t.mp3 -filter_complex concat=n=2:v=0:a=1 -vn -y input.mp3
 * ffmpeg -i input1.mp3 -i input2.mp3 -i input3.mp3 -filter_complex concat=n=3:v=0:a=1 -f MOV -vn -y input.m4a
 * concat means use the media concatenate (joining) function.
